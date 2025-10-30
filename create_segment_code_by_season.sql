@@ -10,17 +10,6 @@ SET accomm_group_bedrooms_label = CASE bedrooms_code
   WHEN 'G' THEN '6 Bed'
   WHEN 'Z' THEN 'Unknown'
   ELSE accomm_group_bedrooms_label 
-END
-WHERE season = 2025;
-
-
-
-UPDATE `ecg-big-data.test_dataset.m_accomm_type_segment_helper`	
-SET accomm_group_type_label = CASE type_code	
-WHEN '0' THEN 'MH'	
-WHEN '1' THEN 'Unknown'	
-WHEN '2' THEN 'MH'	
-WHEN '3' THEN 'Chalet'	
 WHEN '4' THEN 'Room'	
 WHEN '5' THEN 'Apartment'	
 WHEN '6' THEN 'Tent'	
