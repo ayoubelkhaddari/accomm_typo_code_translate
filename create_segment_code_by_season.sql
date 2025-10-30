@@ -9,7 +9,7 @@ SET accomm_group_bedrooms_label = CASE bedrooms_code
   WHEN 'F' THEN '5 Bed'
   WHEN 'G' THEN '6 Bed'
   WHEN 'Z' THEN 'Unknown'
-  ELSE accomm_group_bedrooms_label -- Keeps the original value if no match
+  ELSE accomm_group_bedrooms_label 
 END
 WHERE season = 2025;
 
